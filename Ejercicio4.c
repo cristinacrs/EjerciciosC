@@ -13,6 +13,11 @@ int multiply(int n){
 
 
 int main(){
-	multiply(8);
+	
+	int m;
+	
+	printf("Ingresa un numero: ");
+	scanf("%d", &m);
+	multiply(m);
 	return 0;
 }

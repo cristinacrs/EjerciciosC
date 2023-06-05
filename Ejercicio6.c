@@ -8,6 +8,11 @@ float rads(float grados){
 }
 
 int main(){
-	printf("Radianes: %f", rads(24));
+	
+	float grados;
+	
+	printf("Ingresa los grados: ");
+	scanf("%f", &grados);
+	printf("Radianes: %f", rads(grados));
 	return 0;
 }

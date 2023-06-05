@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float perimetro(int lados, float longitud){
+float perimetro(float lados, float longitud){
 	
 	float resultado = lados * longitud;
 	return resultado;
@@ -8,6 +8,16 @@ float perimetro(int lados, float longitud){
 
 int main(){
 	
-	printf("Perimetro calculado: %.3f", perimetro(6,0.9));
+	
+	float lados;
+	float longitud;
+	
+	printf("Ingresa el numero de lados: ");
+	scanf("%f", &lados);
+	
+	printf("Ingresa la longitud de los lados: ");
+	scanf("%f", &longitud);
+	
+	printf("Perimetro calculado: %.3f", perimetro(lados,longitud));
 	return 0;
 }
